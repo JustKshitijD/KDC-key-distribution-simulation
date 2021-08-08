@@ -1,0 +1,28 @@
+"kdc" is the file to be run in a terminal for starting kdc. 
+An example of running would be-  
+"./kdc -p 12345 -o kdc_out -f kdc_pwd"
+, where , 
+12345 is port on which KDC listens. You can change this value to anything;
+kdc_out is the output file of KDC;
+kdc_pwd is the file in which KDC stores the password strings of users
+
+
+"client" is the file to be run for running sender and receiver.
+In a terminal, sender session can be run as-
+"./client -n ALEESE -m S -o BOBBYD -i plaintext_input -a 192.168.1.9 -p 12345"  
+, where ,
+ALEESE is name of sender (can change this);
+BOBBYD is name of receiver(can change this);
+plaintext_input is the input file having text(make sure this file is present in directory and has some text. Can change the name); 
+192.168.1.9 is the IP address of KDC;
+12345 is the port on which KDC socket listens
+
+In a terminal, receiver session can be run as-
+"./client -n BOBBYD -m R -s outenc.txt -o outfile.txt -a 192.168.1.9 -p 12345"  
+, where ,
+BOBBYD is name of receiver(can change this);
+outenc.txt is the text encoded via Ks that is got by receiver from sender (Can change this name)
+192.168.1.9 is the IP address of KDC;
+12345 is the port on which KDC socket listens
+
+Sender listens on port 12346 and server listens on port 12347. 

@@ -1,0 +1,4 @@
+#!/bin/bash
+python start_kdc.py $2 $4 $6
+
+# ./kdc -p 12345 -o kdc_out -f kdc_pwd

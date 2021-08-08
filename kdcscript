@@ -1,0 +1,104 @@
+Script started on Thursday 08 April 2021 04:08:18 PM IST
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/Assgn3[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/Assgn3[00m$ exit./client -n BOBBYD -m R -s outenc.txt -o outfile.t
+xt -a 192.168.1.9 -p 12345[A[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./kdc -p 12345 -o kdc_out -f kdc_pwd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pcat plaintext_input ./kdc -p 12345 -o kdc_out -f kdc_pwd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./client -n BOBBYD -m R -s outenc.txt -o outfile.t
+xt -a 192.168.1.9 -p 12345[A[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./kdc -p 12345 -o kdc_out -f kdc_pwd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./client -n BOBBYD -m R -s outenc.txt -o outfile.t
+xt -a 192.168.1.9 -p 12345[A[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./kdc -p 12345 -o kdc_out -f kdc_pwd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pcat plaintext_input ls[Kexit[2Pls./client -n ALEESE -m S -o BOBBYD -i plaintext_inp
+ut -a 192.168.1.9 -p 12345[A[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[2Plscat plaintext_input ./kdc -p 12345 -o kdc_out -f kdc_pwd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pcat plaintext_input ls[Kexit[2Plsexit[2Pls
+[0m[01;32massignment3.pdf[0m  [01;32mclient_receiver.py[0m  [01;32mkdc[0m              README      [01;32mstart_kdc.py[0m
+basic_client.py  [01;32mclient_sender.py[0m    kdcscript        recvscript  [01;32mtext[0m
+[01;32mclient[0m           get_md5.py          plaintext_input  sendscript
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/Assgn3[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/Assgn3[00m$ cat plaintext_input 
+ABCDEFG123456abcd
+Send from sender to receiver.
+This is plaintext.
+Ks got from KDC.
+
+Hope this works!!!
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/Assgn3[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/Assgn3[00m$ cat plaintext_input ls[Kexit./client -n BOBBYD -m R -s outenc.txt -o outfile.t
+xt -a 192.168.1.9 -p 12345[A[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./kdc -p 12345 -o kdc_out -f kdc_pwd
+rm: cannot remove 'kdc_out.txt': No such file or directory
+rm: cannot remove 'kdc_pwd': No such file or directory
+socket binded to 12345
+socket is listening for clients
+Got connection from ('192.168.1.9', 45618)
+301 message got from client :  3010000000127.0.1.100012353934264310967000000ALEESE
+12 byte client key extracted from message:  934264310967
+18 byte MD5 hash generated for the client_key:  a154ebbd9c8716efa93031140611bd12
+
+The md5 hash is stored in base64 format thus-  YTE1NGViYmQ5Yzg3MTZlZmE5MzAzMTE0MDYxMWJkMTIK
+client_name as extracted from 301 message:  ALEESE
+client_port as extracted from 301 message:  12353
+client_ip as extracted from 301 message:  127.0.1.1
+Text to stored in password file of KDC:  :ALEESE:127.0.1.1:12353:YTE1NGViYmQ5Yzg3MTZlZmE5MzAzMTE0MDYxMWJkMTIK:
+Text to be stored in Output file of KDC:  3010000000127.0.1.100012353934264310967000000ALEESE
+
+302 message to be sent to client:  302ALEESE
+Sending this message....
+Got connection from ('192.168.1.9', 45620)
+301 message got from client :  3010000000127.0.1.100012350936025500742000000BOBBYD
+12 byte client key extracted from message:  936025500742
+18 byte MD5 hash generated for the client_key:  a8bbaa0bfb78ad5c20caeae6ae400d4f
+
+The md5 hash is stored in base64 format thus-  YThiYmFhMGJmYjc4YWQ1YzIwY2FlYWU2YWU0MDBkNGYK
+client_name as extracted from 301 message:  BOBBYD
+client_port as extracted from 301 message:  12350
+client_ip as extracted from 301 message:  127.0.1.1
+Text to stored in password file of KDC:  :BOBBYD:127.0.1.1:12350:YThiYmFhMGJmYjc4YWQ1YzIwY2FlYWU2YWU0MDBkNGYK:
+Text to be stored in Output file of KDC:  3010000000127.0.1.100012350936025500742000000BOBBYD
+
+302 message to be sent to client:  302BOBBYD
+Sending this message....
+---------------------------------------------------------------------
+305 message got from sender:  305} ¿[Qì«j<¢Ð000000ALEESE2345573501922139
+Client name:  000000ALEESE
+Password corresponding to this client got from password file:  :ALEESE:127.0.1.1:12353:YTE1NGViYmQ5Yzg3MTZlZmE5MzAzMTE0MDYxMWJkMTIK:
+Client_master_key for this client:  a154ebbd9c8716efa93031140611bd12
+
+Decoding 305 message....
+hex string is too short, padding with zero bytes to length
+hex string is too long, ignoring excess
+client2:  BOBBYD
+IP for sender:  127.0.1.1
+IP for receiver:  127.0.1.1
+Port of sender:  12353
+Port of receiver:  12350
+Master key of receiver:  a8bbaa0bfb78ad5c20caeae6ae400d4f
+
+Ks for this (client,server) pair is:  hdeo5rle
+hex string is too short, padding with zero bytes to length
+hex string is too long, ignoring excess
+hex string is too short, padding with zero bytes to length
+hex string is too long, ignoring excess
+306 message is-  306S"Þp½h}AîéÅ¦FJ+ç:ãÝqrü)¸nû²dQT×ëoº&Bb¾¨Ý_Aæñµ\ÁKõûÞ¶%æK5FÊzÊ»26&z{é´¡T
+Sending 306 message to sender....
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/Assgn3[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/Assgn3[00m$ ls
+[0m[01;32massignment3.pdf[0m           in_dec.txt   out.txt
+basic_client.py           in.txt       plaintext_input
+[01;32mclient[0m                    [01;32mkdc[0m          README
+[01;32mclient_receiver.py[0m        kdc_out      recvscript
+[01;32mclient_sender.py[0m          kdc_pwd      sendscript
+decrypted_sender_message  kdcscript    [01;32mstart_kdc.py[0m
+encrypted_sender_message  outenc.txt   [01;32mtext[0m
+get_md5.py                outfile.txt
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/Assgn3[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/Assgn3[00m$ cat outfile.txt 
+ABCDEFG123456abcd
+Send from sender to receiver.
+This is plaintext.
+Ks got from KDC.
+
+Hope this works!!!
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/Assgn3[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/Assgn3[00m$ cat kdc_pwd 
+:ALEESE:127.0.1.1:12353:YTE1NGViYmQ5Yzg3MTZlZmE5MzAzMTE0MDYxMWJkMTIK:
+:BOBBYD:127.0.1.1:12350:YThiYmFhMGJmYjc4YWQ1YzIwY2FlYWU2YWU0MDBkNGYK:
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/Assgn3[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/Assgn3[00m$ cat kdc_out 
+3010000000127.0.1.100012353934264310967000000ALEESE
+3010000000127.0.1.100012350936025500742000000BOBBYD
+(base) ]0;sayukta@kshitij-vostro-15-3568: ~/Desktop/IITM_Courses_4th_year_2nd_sem/Network_Security/Assgns/Assgn3[01;32msayukta@kshitij-vostro-15-3568[00m:[01;34m~/Desktop/IITM_Courses_4th_year_2nd_sem/Nettwork_Security/Assgns/Assgn3[00m$ exit
+exit
+
+Script done on Thursday 08 April 2021 04:11:20 PM IST
